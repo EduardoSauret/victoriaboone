@@ -10,6 +10,7 @@ angular.module('victoriabooneApp', [
   'ngAnimate',
 ])
   .config(function($urlRouterProvider, $locationProvider) {
+
     $urlRouterProvider
       .otherwise('/');
 
