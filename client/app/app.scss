@@ -1,9 +1,8 @@
-@import '../bower_components/fullpage.js/jquery.fullPage.scss';
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 @import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
-
+@import '../assets/styles/vendor/jquery.fullPage';
 
 
 /**
@@ -21,5 +20,6 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 /* inject:scss */
 @import 'main/main';
 @import '../components/footer/footer';
+@import '../components/fullpage/fullpage';
 @import '../components/modal/modal';
 /* endinject */

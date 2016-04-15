@@ -32,7 +32,7 @@
         .component('main', {
             templateUrl: 'app/main/main.html',
             controller: MainController,
-            controllerAs: MainController
+            controllerAs: 'MainController'
         });
 
 })();
