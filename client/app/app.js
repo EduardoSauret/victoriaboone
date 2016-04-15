@@ -7,7 +7,8 @@ angular.module('victoriabooneApp', [
         'ngSanitize',
         'ui.router',
         'ui.bootstrap',
-        'ngAnimate'
+        'ngAnimate',
+        'fullPage.js'
     ])
     .config(function($urlRouterProvider, $locationProvider) {
 
