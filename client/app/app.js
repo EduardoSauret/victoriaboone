@@ -14,9 +14,9 @@ angular.module('victoriabooneApp', [
 
         $stateProvider
             .state({
-                name: 'home',
-                url: '/home',
-                templateUrl: 'app/main/main.html',
+                name: 'test',
+                url: '/test',
+                templateUrl: 'components/fullpage/fullpage.html',
                 controller: 'MainController',
                 controllerAs: 'vm'
             });
