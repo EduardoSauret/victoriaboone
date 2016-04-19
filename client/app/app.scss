@@ -2,6 +2,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
+@import '../assets/styles/vendor/jquery.fullPage';
+
 
 /**
  * App-wide Styles
@@ -18,5 +20,6 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 /* inject:scss */
 @import 'main/main';
 @import '../components/footer/footer';
+@import '../components/fullpage/fullpage';
 @import '../components/modal/modal';
 /* endinject */
