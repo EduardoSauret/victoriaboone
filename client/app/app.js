@@ -10,10 +10,19 @@ angular.module('victoriabooneApp', [
         'ngAnimate',
         'fullPage.js'
     ])
-    .config(function($urlRouterProvider, $locationProvider) {
+    .config(function($urlRouterProvider, $locationProvider, $stateProvider) {
+
+        $stateProvider
+            .state({
+                name: 'home',
+                url: '/home',
+                templateUrl: 'app/main/main.html',
+                controller: 'MainController',
+                controllerAs: 'vm'
+            });
 
         $urlRouterProvider
-            .otherwise('/');
+            .otherwise('/home');
 
         $locationProvider.html5Mode(true);
     });
