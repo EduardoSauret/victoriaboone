@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('sample-app')
+    .module('victoriabooneApp')
     .controller('MainController', MainController);
 
   MainController.$inject = ['$state', '$compile', '$scope'];
