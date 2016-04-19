@@ -13,12 +13,10 @@
 
     this.mainOptions = {
       sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-      menu: '#menu'
+
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+			menu: '#menu'
     };
-
-    this.moog = function(merg){ console.log(merg); };
-
     this.slides = [
       {
         title: 'Simple',
@@ -36,6 +34,8 @@
         src: 'images/3.png'
       }
     ];
+
+    this.moog = function(merg){ console.log(merg); };
 
     this.addSlide = function() {
       _this.slides.push({
