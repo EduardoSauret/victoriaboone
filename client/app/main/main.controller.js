@@ -17,8 +17,6 @@
 			menu: '#menu'
     };
 
-    this.moog = function(merg){ console.log(merg); };
-
     this.slides = [
       {
         title: 'Simple',
@@ -36,6 +34,8 @@
         src: 'images/3.png'
       }
     ];
+
+    this.moog = function(merg){ console.log(merg); };
 
     this.addSlide = function() {
       _this.slides.push({

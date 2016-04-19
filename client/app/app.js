@@ -22,7 +22,7 @@ angular.module('victoriabooneApp', [
             });
 
         $urlRouterProvider
-            .otherwise('/home');
+            .otherwise('/');
 
         $locationProvider.html5Mode(true);
     });
