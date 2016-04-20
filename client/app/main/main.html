@@ -1,10 +1,9 @@
 <ul id="menu" ng-click="vm.moog('asd')" >
-	<li data-menuanchor="firstPage"><a>First slide</a></li>
-	<li data-menuanchor="secondPage"><a>Second slide</a></li>
-	<li data-menuanchor="3rdPage"><a>Third slide</a></li>
-	<li data-menuanchor="4thpage"><a>Fourth slide</a></li>
+  <li data-menuanchor="firstPage"><a>First slide</a></li>
+  <li data-menuanchor="secondPage"><a>Second slide</a></li>
+  <li data-menuanchor="3rdPage"><a>Third slide</a></li>
+  <li data-menuanchor="4thpage"><a>Fourth slide</a></li>
 </ul>
-
 <div full-page options="vm.mainOptions">
   <div class="section " id="section0">
 		<h1>fullPage.js</h1>
@@ -20,7 +19,6 @@
 					<button ng-click="vm.addSlide();">Click Me to Add another Slide!</button>
 				</div>
 			</div>
-
     <div ng-repeat="slide in vm.slides" class="slide">
 			<div class="intro" ng-click="vm.moog('ddd')" >
 				<img ng-src="{{ slide.src }}" alt="simple" />

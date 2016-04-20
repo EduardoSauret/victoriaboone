@@ -8,7 +8,7 @@ angular.module('victoriabooneApp', [
         'ui.router',
         'ui.bootstrap',
         'ngAnimate',
-        'fullPage.js'
+        'fullPage.js',
     ])
     .config(function($urlRouterProvider, $locationProvider) {
 
