@@ -14,7 +14,6 @@
 
         this.mainOptions = {
             sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
             menu: '#menu'
         };
@@ -32,7 +31,14 @@
             src: 'images/3.png'
         }];
 
-        this.moog = function(merg) { console.log(merg); };
+        this.moog = function(merg) {
+            console.log(merg);
+            // Component lookup should always be available since we are not using `ng-if`
+            $mdSidenav('left').close()
+                .then(function() {
+                    $log.debug("close LEFT is done");
+                });
+        };
 
         this.addSlide = function() {
             _this.slides.push({
@@ -93,6 +99,17 @@
                     });
             }
         }
+
+
+        ///////////////////////// HAMBURGER
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function() {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
 
 
     }

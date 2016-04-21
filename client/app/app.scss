@@ -3,6 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
 @import '../assets/styles/vendor/jquery.fullPage';
+@import '../bower_components/css-hamburgers/_sass/hamburgers/hamburgers';
 
 
 /**
@@ -21,5 +22,6 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import 'main/main';
 @import '../components/footer/footer';
 @import '../components/fullpage/fullpage';
+@import '../components/leftnavbar/leftnavbar';
 @import '../components/modal/modal';
 /* endinject */
