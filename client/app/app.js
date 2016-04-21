@@ -9,6 +9,8 @@ angular.module('victoriabooneApp', [
         'ui.bootstrap',
         'ngAnimate',
         'fullPage.js',
+        'ngAria',
+        'ngMaterial'
     ])
     .config(function($urlRouterProvider, $locationProvider) {
 
