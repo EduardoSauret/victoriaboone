@@ -117,14 +117,6 @@
         });
 
 
-        ///////////////////////// Material Design Background/Hamburger Function
-        $scope.keepOpen = false;
-
-
-
-
-
-
 
 
     }

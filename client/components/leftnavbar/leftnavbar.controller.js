@@ -10,14 +10,22 @@
 
     function LeftCtrl($scope, $timeout, $mdSidenav, $log) {
 
+        $scope.keepOpen = false;
+
+        var hamburger = document.querySelector(".hamburger");
+
         $scope.close = function() {
-            
-            var hamburger = document.querySelector(".hamburger");
             hamburger.classList.toggle("is-active");
             // Component lookup should always be available since we are not using `ng-if`
-            $mdSidenav('left').close()
+            $mdSidenav('left')
+                .toggle()
                 .then(function() {
-                    $log.debug("close LEFT is done");
+                    $scope.keepOpen = !$scope.keepOpen;
+                    if ($scope.keepOpen)
+                        angular.element('md-backdrop.md-sidenav-backdrop-custom').removeClass('disabled');
+                    else
+                        angular.element('md-backdrop.md-sidenav-backdrop-custom').addClass('disabled');
+                        $log.debug("close LEFT is done");
                 });
         };
 
