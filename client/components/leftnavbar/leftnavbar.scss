@@ -1,6 +1,24 @@
 #menu {
-	text-align: right;
-	button {
-		color: white;
-	}
+    text-align: right;
+    button {
+        color: white;
+    }
+}
+
+md-backdrop {
+	position: fixed !important;
+}
+
+.md-dialog-is-showing {
+	overflow: visible !important;
+}
+
+md-backdrop.md-sidenav-backdrop-custom {
+    background-color: transparent !important;
+}
+
+md-backdrop.disabled {
+    display: none;
+    pointer-events: none;
+    cursor: default;
 }

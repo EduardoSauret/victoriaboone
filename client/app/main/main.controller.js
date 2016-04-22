@@ -32,6 +32,7 @@
         }];
 
         this.moog = function(merg) {
+            hamburger.classList.toggle("is-active");
             console.log(merg);
             // Component lookup should always be available since we are not using `ng-if`
             $mdSidenav('left').close()
@@ -84,6 +85,11 @@
                 $mdSidenav(navID)
                     .toggle()
                     .then(function() {
+                        $scope.keepOpen = !$scope.keepOpen;
+                        if ($scope.keepOpen)
+                            angular.element('md-backdrop.md-sidenav-backdrop-custom').removeClass('disabled');
+                        else
+                            angular.element('md-backdrop.md-sidenav-backdrop-custom').addClass('disabled');
                         $log.debug("toggle " + navID + " is done");
                     });
             }, 200);
@@ -100,7 +106,6 @@
             }
         }
 
-
         ///////////////////////// HAMBURGER
         // Look for .hamburger
         var hamburger = document.querySelector(".hamburger");
@@ -110,6 +115,16 @@
             hamburger.classList.toggle("is-active");
             // Do something else, like open/close menu
         });
+
+
+        ///////////////////////// Material Design Background/Hamburger Function
+        $scope.keepOpen = false;
+
+
+
+
+
+
 
 
     }
