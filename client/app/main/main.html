@@ -1,7 +1,7 @@
 <div layout="column" ng-cloak>
     <section>
         <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled"></md-backdrop>
-        <md-sidenav md-is-open="isSidenavOpen"  md-component-id="left" class="md-sidenav-left">
+        <md-sidenav md-is-open="isSidenavOpen"  md-component-id="left" class="md-sidenav-left" md-is-locked-open="$mdMedia('gt-md')">
             <md-toolbar class="md-theme-indigo">
                 <h1 class="md-toolbar-tools">Sidenav Left</h1>
             </md-toolbar>
@@ -19,7 +19,7 @@
         </md-sidenav>
         <md-content flex>
             <div layout="column">
-                <div id="menu">
+                <div id="menu" hide-gt-md>
                     <md-button  ng-click="backdropToggle()" class="hamburger hamburger--spin">
                         <div class="hamburger-box">
                             <div class="hamburger-inner"></div>
