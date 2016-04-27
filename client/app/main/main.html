@@ -1,7 +1,7 @@
 <div layout="column" ng-cloak>
-    <section >
-        <md-backdrop class="md-sidenav-backdrop md-opaque md-sidenav-backdrop-custom md-click-catcher md-default-theme disabled" ng-controller="LeftCtrl" ng-click="close()"></md-backdrop>
-        <md-sidenav md-component-id="left" class="md-sidenav-left">
+    <section>
+        <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled"></md-backdrop>
+        <md-sidenav md-is-open="isSidenavOpen"  md-component-id="left" class="md-sidenav-left">
             <md-toolbar class="md-theme-indigo">
                 <h1 class="md-toolbar-tools">Sidenav Left</h1>
             </md-toolbar>
@@ -12,7 +12,7 @@
                     <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
                     <li data-menuanchor="4thpage"><a>Who we are</a></li>
                 </ul>
-                <md-button class="md-primary" ng-controller="LeftCtrl" ng-click="close()">
+                <md-button class="md-primary" ng-click="backdropToggle()">
                     Close Sidenav Left
                 </md-button>
             </md-content>
@@ -20,7 +20,7 @@
         <md-content flex>
             <div layout="column">
                 <div id="menu">
-                    <md-button ng-click="toggleLeft()" class="hamburger hamburger--spin">
+                    <md-button  ng-click="backdropToggle()" class="hamburger hamburger--spin">
                         <div class="hamburger-box">
                             <div class="hamburger-inner"></div>
                         </div>

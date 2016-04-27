@@ -35,9 +35,15 @@
             hamburger.classList.toggle("is-active");
             console.log(merg);
             // Component lookup should always be available since we are not using `ng-if`
-            $mdSidenav('left').close()
+            $mdSidenav('left')
+                .toggle()
                 .then(function() {
-                    $log.debug("close LEFT is done");
+                    $scope.keepOpen = !$scope.keepOpen;
+                    if ($scope.keepOpen)
+                        angular.element('md-backdrop.md-sidenav-backdrop-custom').removeClass('disabled');
+                    else
+                        angular.element('md-backdrop.md-sidenav-backdrop-custom').addClass('disabled');
+                        $log.debug("close LEFT is done");
                 });
         };
 
@@ -81,15 +87,13 @@
          */
         function buildDelayedToggler(navID) {
             return debounce(function() {
+                ///////////////////////// HAMBURGER
+                hamburger.classList.toggle("is-active");
+                $log.debug("Hamburger toggle" + hamburger.classList + " is done");                       
                 // Component lookup should always be available since we are not using `ng-if`
                 $mdSidenav(navID)
                     .toggle()
                     .then(function() {
-                        $scope.keepOpen = !$scope.keepOpen;
-                        if ($scope.keepOpen)
-                            angular.element('md-backdrop.md-sidenav-backdrop-custom').removeClass('disabled');
-                        else
-                            angular.element('md-backdrop.md-sidenav-backdrop-custom').addClass('disabled');
                         $log.debug("toggle " + navID + " is done");
                     });
             }, 200);
@@ -110,11 +114,46 @@
         // Look for .hamburger
         var hamburger = document.querySelector(".hamburger");
         // On click
-        hamburger.addEventListener("click", function() {
-            // Toggle class "is-active"
-            hamburger.classList.toggle("is-active");
-            // Do something else, like open/close menu
+        //hamburger.addEventListener("click", function(navID) {
+        // Toggle class "is-active"
+        //hamburger.classList.toggle("is-active");
+        //$log.debug("Hamburger toggle" + hamburger.classList + " is done");
+        // Do something else, like open/close menu
+        //});
+
+        ///////////////////////// md-backdrop
+        $scope.isSidenavOpen = false;
+
+        $scope.$watch('isSidenavOpen', function(isSidenavOpen) {
+            $log.debug('watch sidenav is ' + (isSidenavOpen ? 'open' : 'closed'));
         });
+
+
+
+        $scope.close = close;
+
+        function close() {
+            hamburger.classList.toggle("is-active");
+            // Component lookup should always be available since we are not using `ng-if`
+            $mdSidenav('left')
+                .toggle()
+                .then(function() {
+                    $scope.keepOpen = !$scope.keepOpen;
+                    if ($scope.keepOpen)
+                        angular.element('md-backdrop.md-sidenav-backdrop-custom').removeClass('disabled');
+                    else
+                        angular.element('md-backdrop.md-sidenav-backdrop-custom').addClass('disabled');
+                        $log.debug("close LEFT is done");
+                });
+        };
+
+
+        $scope.backdropToggle = function (){
+            if(true){
+                close();
+                $log.debug("backdropToggle is done");
+            }
+        };
 
 
 
