@@ -128,8 +128,6 @@
             $log.debug('watch sidenav is ' + (isSidenavOpen ? 'open' : 'closed'));
         });
 
-
-
         $scope.close = close;
 
         function close() {
@@ -154,8 +152,6 @@
                 $log.debug("backdropToggle is done");
             }
         };
-
-
 
 
     }
