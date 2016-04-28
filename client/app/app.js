@@ -10,7 +10,8 @@ angular.module('victoriabooneApp', [
         'ngAnimate',
         'fullPage.js',
         'ngAria',
-        'ngMaterial'
+        'ngMaterial',
+        'ui.materialize'
     ])
     .config(function($urlRouterProvider, $locationProvider) {
 

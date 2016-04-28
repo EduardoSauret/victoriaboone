@@ -1,84 +1,90 @@
 <div layout="column" ng-cloak>
-    <section>
-        <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled"></md-backdrop>
-        <md-sidenav md-is-open="isSidenavOpen"  md-component-id="left" class="md-sidenav-left" md-is-locked-open="$mdMedia('gt-md')">
-            <md-toolbar class="md-theme-indigo">
-                <h1 class="md-toolbar-tools">Sidenav Left</h1>
-            </md-toolbar>
-            <md-content layout-padding>
-                <ul ng-click="vm.moog('asd')">
-                    <li data-menuanchor="firstPage"><a>Home</a></li>
-                    <li data-menuanchor="secondPage"><a>Spring 01</a></li>
-                    <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
-                    <li data-menuanchor="4thpage"><a>Who we are</a></li>
-                </ul>
-                <md-button class="md-primary" ng-click="backdropToggle()">
-                    Close Sidenav Left
+    <nav hide-xs hide-sm hide-md>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Victoria Boone</a>
+            <ul id="nav-mobile" class="right" ng-click="vm.menuClick('asd')">
+                <li data-menuanchor="firstPage"><a>Home</a></li>
+                <li data-menuanchor="secondPage"><a>Spring 01</a></li>
+                <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
+                <li data-menuanchor="4thpage"><a>Who we are</a></li>
+            </ul>
+        </div>
+    </nav>
+    <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled"></md-backdrop>
+    <md-sidenav md-is-open="isSidenavOpen" md-component-id="left" class="md-sidenav-left" hide-lg hide-xl>
+        <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Sidenav Left</h1>
+        </md-toolbar>
+        <md-content layout-padding>
+            <ul ng-click="vm.moog('asd')">
+                <li data-menuanchor="firstPage"><a>Home</a></li>
+                <li data-menuanchor="secondPage"><a>Spring 01</a></li>
+                <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
+                <li data-menuanchor="4thpage"><a>Who we are</a></li>
+            </ul>
+            <md-button class="md-primary" ng-click="backdropToggle()">
+                Close Sidenav Left
+            </md-button>
+        </md-content>
+    </md-sidenav>
+    <md-content flex>
+        <div layout="column">
+            <div id="menu" hide-gt-md>
+                <md-button ng-click="backdropToggle()" class="hamburger hamburger--spin">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
                 </md-button>
-            </md-content>
-        </md-sidenav>
-        <md-content flex>
-            <div layout="column">
-                <div id="menu" hide-gt-md>
-                    <md-button  ng-click="backdropToggle()" class="hamburger hamburger--spin">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner"></div>
-                        </div>
-                    </md-button>
-                    <div>Menu</div>
+                <div>Menu</div>
+            </div>
+            <div full-page options="vm.mainOptions">
+                <div class="section active" id="section0">
+                    <h1>fullPage.js</h1>
+                    <p>Create Beautiful Fullscreen Scrolling Websites</p>
+                    <img src="images/fullPage.png" alt="fullPage" />
                 </div>
-                <div id="logo">
-                    <div>VICTORIA BOONE</div>
+                <div class="section" id="section1">
+                    <div class="slide">
+                        <div class="intro">
+                            <h1>Create Sliders</h1>
+                            <p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+                            <img src="images/slider.png" alt="slider" />
+                            <br/>
+                            <button ng-click="vm.addSlide();">Click Me to Add another Slide!</button>
+                        </div>
+                    </div>
+                    <div ng-repeat="slide in vm.slides" class="slide">
+                        <div class="intro" ng-click="vm.moog('ddd')">
+                            <img ng-src="{{ slide.src }}" alt="simple" />
+                            <h1>{{ slide.title }}</h1>
+                            <p>{{ slide.description }}</p>
+                        </div>
+                    </div>
                 </div>
-                <div full-page options="vm.mainOptions">
-                    <div class="section active" id="section0">
-                        <h1>fullPage.js</h1>
-                        <p>Create Beautiful Fullscreen Scrolling Websites</p>
-                        <img src="images/fullPage.png" alt="fullPage" />
+                <div class="section" id="section2">
+                    <div class="intro">
+                        <h1 ng-click="vm.moog('sss')">Example</h1>
+                        <p>HTML markup example to define 4 sections.</p>
+                        <img src="images/example2.png" alt="example" />
                     </div>
-                    <div class="section" id="section1">
-                        <div class="slide">
-                            <div class="intro">
-                                <h1>Create Sliders</h1>
-                                <p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-                                <img src="images/slider.png" alt="slider" />
-                                <br/>
-                                <button ng-click="vm.addSlide();">Click Me to Add another Slide!</button>
-                            </div>
-                        </div>
-                        <div ng-repeat="slide in vm.slides" class="slide">
-                            <div class="intro" ng-click="vm.moog('ddd')">
-                                <img ng-src="{{ slide.src }}" alt="simple" />
-                                <h1>{{ slide.title }}</h1>
-                                <p>{{ slide.description }}</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="section" id="section3">
+                    <div class="intro">
+                        <h1>Working On Tablets</h1>
+                        <p>
+                            Designed to fit to different screen sizes as well as tablet and mobile devices.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </p>
                     </div>
-                    <div class="section" id="section2">
-                        <div class="intro">
-                            <h1 ng-click="vm.moog('sss')">Example</h1>
-                            <p>HTML markup example to define 4 sections.</p>
-                            <img src="images/example2.png" alt="example" />
-                        </div>
-                    </div>
-                    <div class="section" id="section3">
-                        <div class="intro">
-                            <h1>Working On Tablets</h1>
-                            <p>
-                                Designed to fit to different screen sizes as well as tablet and mobile devices.
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                            </p>
-                        </div>
-                        <img src="images/tablets.png" alt="tablets" />
-                    </div>
+                    <img src="images/tablets.png" alt="tablets" />
                 </div>
             </div>
-            <div flex></div>
-        </md-content>
-    </section>
+        </div>
+        <div flex></div>
+    </md-content>
 </div>

@@ -47,6 +47,10 @@
                 });
         };
 
+        this.menuClick = function(merg) {
+            console.log(merg);
+        }
+
         this.addSlide = function() {
             _this.slides.push({
                 title: 'New Slide',
