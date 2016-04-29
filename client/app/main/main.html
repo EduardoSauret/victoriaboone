@@ -1,8 +1,8 @@
 <div layout="column" ng-cloak>
     <nav hide-xs hide-sm hide-md>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper white">
             <a href="#" class="brand-logo">Victoria Boone</a>
-            <ul id="nav-mobile" class="right" ng-click="vm.menuClick('asd')">
+            <ul class="right active-link" ng-click="vm.menuClick('asd')">
                 <li data-menuanchor="firstPage"><a>Home</a></li>
                 <li data-menuanchor="secondPage"><a>Spring 01</a></li>
                 <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
@@ -16,15 +16,17 @@
             <h1 class="md-toolbar-tools">Sidenav Left</h1>
         </md-toolbar>
         <md-content layout-padding>
-            <ul ng-click="vm.moog('asd')">
-                <li data-menuanchor="firstPage"><a>Home</a></li>
-                <li data-menuanchor="secondPage"><a>Spring 01</a></li>
-                <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
-                <li data-menuanchor="4thpage"><a>Who we are</a></li>
-            </ul>
-            <md-button class="md-primary" ng-click="backdropToggle()">
-                Close Sidenav Left
-            </md-button>
+            <nav hide-lg hide-xl>
+                <ul class="nav-mobile active-link" ng-click="vm.moog('asd')">
+                    <li data-menuanchor="firstPage"><a>Home</a></li>
+                    <li data-menuanchor="secondPage"><a>Spring 01</a></li>
+                    <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
+                    <li data-menuanchor="4thpage"><a>Who we are</a></li>
+                </ul>
+                <md-button class="md-primary" ng-click="backdropToggle()">
+                    Close Sidenav Left
+                </md-button>
+            </nav>
         </md-content>
     </md-sidenav>
     <md-content flex>

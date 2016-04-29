@@ -29,7 +29,7 @@ const paths = {
             `${clientPath}/**/!(*.spec|*.mock).js`,
             `!${clientPath}/bower_components/**/*`
         ],
-        styles: [`${clientPath}/{app,components}/**/*.scss`],
+        styles: [`${clientPath}/{app,components}/**/*.scss`,`${clientPath}/styles/**.scss`],
         mainStyle: `${clientPath}/app/app.scss`,
         views: `${clientPath}/{app,components}/**/*.jade`,
         mainView: `${clientPath}/index.html`,
@@ -238,6 +238,7 @@ gulp.task('inject:scss', () => {
                     let newPath = filepath
                         .replace(`/${clientPath}/app/`, '')
                         .replace(`/${clientPath}/components/`, '../components/')
+                        .replace(`/${clientPath}/styles/`, '../styles/')
                         .replace(/_(.*).scss/, (match, p1, offset, string) => p1)
                         .replace('.scss', '');
                     return `@import '${newPath}';`;
