@@ -1,16 +1,36 @@
 <div layout="column" ng-cloak>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li data-menuanchor="secondPage"><a href="#!">Spring 16' Pt.1</a></li>
+        <li class="divider"></li>
+        <li data-menuanchor="3rdPage"><a href="#!">Spring 16' Pt.2</a></li>
+    </ul>
     <nav hide-xs hide-sm hide-md>
         <div class="nav-wrapper white">
             <a href="#" class="brand-logo">Victoria Boone</a>
             <ul class="right active-link" ng-click="vm.menuClick('asd')">
-                <li data-menuanchor="firstPage"><a>Home</a></li>
-                <li data-menuanchor="secondPage"><a>Spring 01</a></li>
-                <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
-                <li data-menuanchor="4thpage"><a>Who we are</a></li>
+                <li data-menuanchor="firstPage">
+                    <md-button md-ink-ripple="#f48fb1">Home</md-button>
+                </li>
+                <li data-activates="dropdown1" dropdown data-hover="true">
+                    <md-button md-ink-ripple="#f48fb1">
+                        Collections
+                        <i class="material-icons right">arrow_drop_down</i>
+                    </md-button>
+                </li>
+                <li data-menuanchor="secondPage">
+                    <md-button md-ink-ripple="#f48fb1">Spring 01</md-button>
+                </li>
+                <li data-menuanchor="3rdPage">
+                    <md-button md-ink-ripple="#f48fb1">Spring 02</md-button>
+                </li>
+                <li data-menuanchor="4thpage">
+                    <md-button md-ink-ripple="#f48fb1">Who we are</md-button>
+                </li>
             </ul>
         </div>
     </nav>
-    <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled"></md-backdrop>
+    <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled" hide-lg hide-xl>></md-backdrop>
     <md-sidenav md-is-open="isSidenavOpen" md-component-id="left" class="md-sidenav-left" hide-lg hide-xl>
         <md-toolbar class="md-theme-indigo">
             <h1 class="md-toolbar-tools">Sidenav Left</h1>

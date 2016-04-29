@@ -1,0 +1,25 @@
+button:focus {
+    background-color: transparent;
+}
+
+nav ul li {
+    button span {
+        color: #263238;
+        font-weight: normal;
+        font-size: 12px;
+    }
+}
+
+nav ul li.active {
+    background-color: #ff4081;
+    button span {
+        color: white;
+    }
+}
+
+button.md-button.md-ink-ripple {
+    margin: 0 auto;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px;
+}
