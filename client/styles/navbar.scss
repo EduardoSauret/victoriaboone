@@ -3,7 +3,7 @@ button:focus {
 }
 
 nav ul li {
-    button span {
+    button span, button i {
         color: #263238;
         font-weight: normal;
         font-size: 12px;
@@ -17,7 +17,7 @@ nav ul li.active {
     }
 }
 
-button.md-button.md-ink-ripple {
+button.md-button.md-ink-ripple, button.md-button.ng-isolate-scope.md-ink-ripple  {
     margin: 0 auto;
     height: 50px;
     width: 100%;

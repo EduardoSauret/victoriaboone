@@ -1,30 +1,34 @@
 <div layout="column" ng-cloak>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
-        <li data-menuanchor="secondPage"><a href="#!">Spring 16' Pt.1</a></li>
+        <li data-menuanchor="spring-01" >
+            <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.1</md-button>
+        </li>
         <li class="divider"></li>
-        <li data-menuanchor="3rdPage"><a href="#!">Spring 16' Pt.2</a></li>
+        <li  data-menuanchor="spring-02">
+            <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.2</md-button>
+        </li>
     </ul>
     <nav hide-xs hide-sm hide-md>
         <div class="nav-wrapper white">
             <a href="#" class="brand-logo">Victoria Boone</a>
             <ul class="right active-link" ng-click="vm.menuClick('asd')">
-                <li data-menuanchor="firstPage">
+                <li data-menuanchor="home">
                     <md-button md-ink-ripple="#f48fb1">Home</md-button>
                 </li>
-                <li data-activates="dropdown1" dropdown data-hover="true">
-                    <md-button md-ink-ripple="#f48fb1">
+                <li>
+                    <md-button md-ink-ripple="#f48fb1" data-activates="dropdown1" dropdown data-hover="true">
                         Collections
                         <i class="material-icons right">arrow_drop_down</i>
                     </md-button>
                 </li>
-                <li data-menuanchor="secondPage">
+                <li data-menuanchor="spring-01">
                     <md-button md-ink-ripple="#f48fb1">Spring 01</md-button>
                 </li>
-                <li data-menuanchor="3rdPage">
+                <li data-menuanchor="spring-02">
                     <md-button md-ink-ripple="#f48fb1">Spring 02</md-button>
                 </li>
-                <li data-menuanchor="4thpage">
+                <li data-menuanchor="whoweare">
                     <md-button md-ink-ripple="#f48fb1">Who we are</md-button>
                 </li>
             </ul>
@@ -37,7 +41,7 @@
         </md-toolbar>
         <md-content layout-padding>
             <nav hide-lg hide-xl>
-                <ul class="nav-mobile active-link" ng-click="vm.moog('asd')">
+                <ul class="active-link" ng-click="vm.moog('asd')">
                     <li data-menuanchor="firstPage"><a>Home</a></li>
                     <li data-menuanchor="secondPage"><a>Spring 01</a></li>
                     <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
@@ -104,6 +108,13 @@
                         </p>
                     </div>
                     <img src="images/tablets.png" alt="tablets" />
+                </div>
+                <div class="section" id="section4">
+                    <div class="intro">
+                        <h1 ng-click="vm.moog('sss')">Example</h1>
+                        <p>HTML markup example to define 4 sections.</p>
+                        <img src="images/example2.png" alt="example" />
+                    </div>
                 </div>
             </div>
         </div>
