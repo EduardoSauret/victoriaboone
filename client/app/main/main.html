@@ -1,11 +1,10 @@
 <div layout="column" ng-cloak>
     <!-- Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
-        <li data-menuanchor="spring-01" >
+        <li data-menuanchor="spring-01">
             <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.1</md-button>
         </li>
-        <li class="divider"></li>
-        <li  data-menuanchor="spring-02">
+        <li data-menuanchor="spring-02">
             <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.2</md-button>
         </li>
     </ul>
@@ -16,17 +15,11 @@
                 <li data-menuanchor="home">
                     <md-button md-ink-ripple="#f48fb1">Home</md-button>
                 </li>
-                <li>
+                <li >
                     <md-button md-ink-ripple="#f48fb1" data-activates="dropdown1" dropdown data-hover="true">
                         Collections
                         <i class="material-icons right">arrow_drop_down</i>
                     </md-button>
-                </li>
-                <li data-menuanchor="spring-01">
-                    <md-button md-ink-ripple="#f48fb1">Spring 01</md-button>
-                </li>
-                <li data-menuanchor="spring-02">
-                    <md-button md-ink-ripple="#f48fb1">Spring 02</md-button>
                 </li>
                 <li data-menuanchor="whoweare">
                     <md-button md-ink-ripple="#f48fb1">Who we are</md-button>
@@ -35,7 +28,7 @@
         </div>
     </nav>
     <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled" hide-lg hide-xl>></md-backdrop>
-    <md-sidenav md-is-open="isSidenavOpen" md-component-id="left" class="md-sidenav-left" hide-lg hide-xl>
+    <md-sidenav md-is-open="isSidenavOpen" md-component-id="left" class="md-sidenav-left" hide-lg hide-xl md-is-locked-open="$mdMedia('gt-md')">
         <md-toolbar class="md-theme-indigo">
             <h1 class="md-toolbar-tools">Sidenav Left</h1>
         </md-toolbar>
@@ -79,6 +72,15 @@
                             <button ng-click="vm.addSlide();">Click Me to Add another Slide!</button>
                         </div>
                     </div>
+                    <div class="slide">
+                        <div class="intro">
+                            <h1>Second Slide</h1>
+                            <p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+                            <img src="images/slider.png" alt="slider" />
+                            <br/>
+                            <button ng-click="vm.addSlide();">Click Me to Add another Slide!</button>
+                        </div>
+                    </div>
                     <div ng-repeat="slide in vm.slides" class="slide">
                         <div class="intro" ng-click="vm.moog('ddd')">
                             <img ng-src="{{ slide.src }}" alt="simple" />
@@ -108,13 +110,6 @@
                         </p>
                     </div>
                     <img src="images/tablets.png" alt="tablets" />
-                </div>
-                <div class="section" id="section4">
-                    <div class="intro">
-                        <h1 ng-click="vm.moog('sss')">Example</h1>
-                        <p>HTML markup example to define 4 sections.</p>
-                        <img src="images/example2.png" alt="example" />
-                    </div>
                 </div>
             </div>
         </div>

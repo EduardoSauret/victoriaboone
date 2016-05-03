@@ -1,12 +1,18 @@
-button:focus {
+nav button {
+	vertical-align: middle;
+}
+
+nav button:focus {
     background-color: transparent;
 }
 
 nav ul li {
-    button span, button i {
+    button span,
+    button i {
         color: #263238;
         font-weight: normal;
         font-size: 12px;
+        line-height: 50px;
     }
 }
 
@@ -17,9 +23,25 @@ nav ul li.active {
     }
 }
 
-button.md-button.md-ink-ripple, button.md-button.ng-isolate-scope.md-ink-ripple  {
+button.md-button.md-ink-ripple,
+button.md-button.ng-isolate-scope.md-ink-ripple {
     margin: 0 auto;
     height: 50px;
     width: 100%;
     padding: 0 10px;
+}
+
+.dropdown-content {
+    top: 0px !important;
+}
+
+.dropdown-content li.active,
+.dropdown-content li.selected {
+    background-color: #ff4081;
+    color: white;
+}
+
+.dropdown-content li button span.active,
+.dropdown-content li button span.selected {
+	color: white;
 }
