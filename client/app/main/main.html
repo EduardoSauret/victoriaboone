@@ -15,7 +15,7 @@
                 <li data-menuanchor="home">
                     <md-button md-ink-ripple="#f48fb1">Home</md-button>
                 </li>
-                <li >
+                <li>
                     <md-button md-ink-ripple="#f48fb1" data-activates="dropdown1" dropdown data-hover="true">
                         Collections
                         <i class="material-icons right">arrow_drop_down</i>
@@ -48,14 +48,17 @@
     </md-sidenav>
     <md-content flex>
         <div layout="column">
-            <div id="menu" hide-gt-md>
-                <md-button ng-click="backdropToggle()" class="hamburger hamburger--spin">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </md-button>
-                <div>Menu</div>
-            </div>
+            <nav>
+                <div class="nav-wrapper white">
+                    <a href="#" class="brand-logo">Logo</a>
+                        <md-button ng-click="backdropToggle()" class="hamburger hamburger--spin">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                            <p>Menu</p>
+                        </md-button>
+                </div>
+            </nav>
             <div full-page options="vm.mainOptions">
                 <div class="section active" id="section0">
                     <h1>fullPage.js</h1>
