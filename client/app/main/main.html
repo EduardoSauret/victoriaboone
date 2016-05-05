@@ -1,13 +1,4 @@
 <div layout="column" ng-cloak>
-    <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content">
-        <li data-menuanchor="spring-01">
-            <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.1</md-button>
-        </li>
-        <li data-menuanchor="spring-02">
-            <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.2</md-button>
-        </li>
-    </ul>
     <nav hide-xs hide-sm hide-md>
         <div class="nav-wrapper white">
             <a href="#" class="brand-logo">Victoria Boone</a>
@@ -27,8 +18,17 @@
             </ul>
         </div>
     </nav>
-    <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled" hide-lg hide-xl>></md-backdrop>
-    <md-sidenav md-is-open="isSidenavOpen" md-component-id="left" class="md-sidenav-left" hide-lg hide-xl md-is-locked-open="$mdMedia('gt-md')">
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li data-menuanchor="spring-01">
+            <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.1</md-button>
+        </li>
+        <li data-menuanchor="spring-02">
+            <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.2</md-button>
+        </li>
+    </ul>
+    <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled" hide-lg hide-xl></md-backdrop>
+    <md-sidenav md-is-open="isSidenavOpen" md-component-id="left" class="md-sidenav-left" hide-lg hide-xl>
         <md-toolbar class="md-theme-indigo">
             <h1 class="md-toolbar-tools">Sidenav Left</h1>
         </md-toolbar>
@@ -48,14 +48,14 @@
     </md-sidenav>
     <md-content flex>
         <div layout="column">
-            <div id="menu" hide-gt-md>
-                <md-button ng-click="backdropToggle()" class="hamburger hamburger--spin">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </md-button>
-                <div>Menu</div>
-            </div>
+                <div id="menu" hide-gt-md>
+                    <md-button ng-click="backdropToggle()" class="hamburger hamburger--spin">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                        <span>Menu</span>
+                    </md-button>
+                </div>
             <div full-page options="vm.mainOptions">
                 <div class="section active" id="section0">
                     <h1>fullPage.js</h1>
