@@ -1,7 +1,8 @@
 <div layout="column" ng-cloak>
+    <!-- Desktop Navbar -->
     <nav hide-xs hide-sm hide-md>
         <div class="nav-wrapper white">
-            <a href="#" class="brand-logo">Victoria Boone</a>
+            <a href="#" class="brand-logo">VictoriaBoone</a>
             <ul class="right active-link" ng-click="vm.menuClick('asd')">
                 <li data-menuanchor="home">
                     <md-button md-ink-ripple="#f48fb1">Home</md-button>
@@ -27,36 +28,38 @@
             <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.2</md-button>
         </li>
     </ul>
+        <!-- Mobile Hamburger Sidenav -->
+    <nav hide-lg hide-xl class="nav-wrapper white">
+        <div>
+            <a href="#" class="brand-logo">VictoriaBoone</a>
+            <div id="nav-mobile" class="right">
+                <div ng-click="backdropToggle()" class="hamburger hamburger--spin" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Sidenav -->
     <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled" hide-lg hide-xl></md-backdrop>
     <md-sidenav md-is-open="isSidenavOpen" md-component-id="left" class="md-sidenav-left" hide-lg hide-xl>
         <md-toolbar class="md-theme-indigo">
-            <h1 class="md-toolbar-tools">Sidenav Left</h1>
+            <h1 class="md-toolbar-tools">VictoriaBoone</h1>
         </md-toolbar>
         <md-content layout-padding>
-            <nav hide-lg hide-xl>
-                <ul class="active-link" ng-click="vm.moog('asd')">
-                    <li data-menuanchor="firstPage"><a>Home</a></li>
-                    <li data-menuanchor="secondPage"><a>Spring 01</a></li>
-                    <li data-menuanchor="3rdPage"><a>Spring 02</a></li>
-                    <li data-menuanchor="4thpage"><a>Who we are</a></li>
-                </ul>
-                <md-button class="md-primary" ng-click="backdropToggle()">
-                    Close Sidenav Left
-                </md-button>
-            </nav>
+            <ul class="active-link" ng-click="vm.moog('asd')">
+                <li data-menuanchor="home"><a>Home</a></li>
+                <li class="no-padding">
+                    <li>Collections<i class="midi-navigation-arrow-dropdown"></i></li>
+                    <li data-menuanchor="spring-01"><a>Spring 16' Pt.1</a></li>
+                    <li data-menuanchor="spring-02"><a>Spring 16' Pt.2</a></li>
+                    <li data-menuanchor="whoweare"><a>Who we are</a></li>
+            </ul>
         </md-content>
     </md-sidenav>
     <md-content flex>
         <div layout="column">
-                <div class="nav-wrapper white">
-                    <a href="#" class="brand-logo">Logo</a>
-                        <md-button ng-click="backdropToggle()" class="hamburger hamburger--spin">
-                            <div class="hamburger-box">
-                                <div class="hamburger-inner"></div>
-                            </div>
-                            <p>Menu</p>
-                        </md-button>
-                </div>
             <div full-page options="vm.mainOptions">
                 <div class="section active" id="section0">
                     <h1>fullPage.js</h1>

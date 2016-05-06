@@ -1,3 +1,7 @@
+nav {
+    z-index: 999;
+}
+
 nav button {
 	vertical-align: middle;
 }
@@ -45,3 +49,5 @@ button.md-button.ng-isolate-scope.md-ink-ripple {
 .dropdown-content li button span.selected {
 	color: white;
 }
+
+
