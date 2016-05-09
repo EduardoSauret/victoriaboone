@@ -32,19 +32,10 @@
         }];
 
         this.moog = function(merg) {
-            hamburger.classList.toggle("is-active");
+            //hamburger.classList.toggle("is-active");
             console.log(merg);
             // Component lookup should always be available since we are not using `ng-if`
-            $mdSidenav('left')
-                .toggle()
-                .then(function() {
-                    $scope.keepOpen = !$scope.keepOpen;
-                    if ($scope.keepOpen)
-                        angular.element('md-backdrop.md-sidenav-backdrop-custom').removeClass('disabled');
-                    else
-                        angular.element('md-backdrop.md-sidenav-backdrop-custom').addClass('disabled');
-                        $log.debug("close LEFT is done");
-                });
+
         };
 
         this.menuClick = function(merg) {
