@@ -1,63 +1,6 @@
 <div layout="column" ng-cloak>
-    <!-- Desktop Navbar -->
-    <nav hide-xs hide-sm hide-md>
-        <div class="nav-wrapper white">
-            <a href="#" class="brand-logo">VictoriaBoone</a>
-            <ul class="right active-link" ng-click="vm.menuClick('asd')">
-                <li data-menuanchor="home">
-                    <md-button md-ink-ripple="#f48fb1">Home</md-button>
-                </li>
-                <li>
-                    <md-button md-ink-ripple="#f48fb1" data-activates="dropdown1" dropdown data-hover="true">
-                        Collections
-                        <i class="material-icons right">arrow_drop_down</i>
-                    </md-button>
-                </li>
-                <li data-menuanchor="whoweare">
-                    <md-button md-ink-ripple="#f48fb1">Who we are</md-button>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Dropdown Structure -->
-    <ul id="dropdown1" class="dropdown-content">
-        <li data-menuanchor="spring-01">
-            <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.1</md-button>
-        </li>
-        <li data-menuanchor="spring-02">
-            <md-button md-ink-ripple="#f48fb1">Spring 16' Pt.2</md-button>
-        </li>
-    </ul>
-        <!-- Mobile Hamburger Sidenav -->
-    <nav hide-lg hide-xl class="nav-wrapper white">
-        <div>
-            <a href="#" class="brand-logo">VictoriaBoone</a>
-            <div id="nav-mobile" class="right">
-                <div ng-click="backdropToggle()" class="hamburger hamburger--spin" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Mobile Sidenav -->
-    <md-backdrop ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled" hide-lg hide-xl></md-backdrop>
-    <md-sidenav ng-click="backdropToggle()" md-is-open="isSidenavOpen" md-component-id="left" class="md-sidenav-left" hide-lg hide-xl>
-        <md-toolbar class="white">
-            
-        </md-toolbar>
-        <md-content layout-padding>
-            <ul class="active-link" ng-click="vm.moog('asd')">
-                <li data-menuanchor="home"><a>Home</a></li>
-                <li class="no-padding">
-                    <li>Collections<i class="midi-navigation-arrow-dropdown"></i></li>
-                    <li data-menuanchor="spring-01"><a>Spring 16' Pt.1</a></li>
-                    <li data-menuanchor="spring-02"><a>Spring 16' Pt.2</a></li>
-                    <li data-menuanchor="whoweare"><a>Who we are</a></li>
-            </ul>
-        </md-content>
-    </md-sidenav>
+    <navbar></navbar>
+    <sidebar></sidebar>
     <md-content flex>
         <div layout="column">
             <div full-page options="vm.mainOptions">

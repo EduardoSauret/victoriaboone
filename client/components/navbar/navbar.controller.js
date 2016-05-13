@@ -1,18 +1,24 @@
 'use strict';
 
-class NavbarController {
-  //start-non-standard
-  menu = [{
-    'title': 'Home',
-    'state': 'main'
-  }];
+class NavbarCtrl {
 
-  isCollapsed = true;
-  //end-non-standard
-
-  constructor() {
+    menuClick(merg) {
+        console.log(merg);
     }
+
+    /*Fullstack menu start-non-standard
+    menu = [{
+      'title': 'Home',
+      'state': 'main'
+    }];
+
+    isCollapsed = true;
+    //end-non-standard
+
+    constructor() {
+      } 
+    */
 }
 
 angular.module('victoriabooneApp')
-  .controller('NavbarController', NavbarController);
+    .controller('NavbarCtrl', NavbarCtrl);
