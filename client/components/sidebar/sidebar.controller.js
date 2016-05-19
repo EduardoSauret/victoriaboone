@@ -10,7 +10,6 @@
 
     function SidebarCtrl($state, $compile, $scope, $timeout, $mdSidenav, $log) {
 
-        var hamburger = document.querySelector(".hamburger");
 
         ///////////////////////// SIDENAV
 
@@ -71,9 +70,13 @@
             $log.debug('watch sidenav is ' + (isSidenavOpen ? 'open' : 'closed'));
         });
 
+
+        var hamburger = document.querySelector(".hamburger");
+        var navfade = document.querySelector(".navFade");
         $scope.close = close;
 
         function close() {
+            navfade.classList.toggle("fadeOut");
             hamburger.classList.toggle("is-active");
             // Component lookup should always be available since we are not using `ng-if`
             $mdSidenav('left')

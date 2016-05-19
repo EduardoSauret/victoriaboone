@@ -1,21 +1,22 @@
 // Desktop Navbar 
-nav(hide-xs hide-sm hide-md ng-controller='NavbarCtrl')
-  div(class="nav-wrapper white")
-      a(href="#" class="brand-logo") VictoriaBoone 
-      ul(class="right active-link" ng-click="vm.menuClick('asd')")
-        li(data-menuanchor="home")
-          md-button(md-ink-ripple="#f48fb1") Home
-        li
-          md-button(md-ink-ripple="#f48fb1" data-activates="dropdown1" dropdown data-hover="true") Collections
-            i(class="material-icons right") arrow_drop_down      
-        li(data-menuanchor="whoweare")
-          md-button(md-ink-ripple="#f48fb1") Who we are            
-// Dropdown Structure
-ul(id="dropdown1" class="dropdown-content")
-  li(data-menuanchor="spring-01")
-    md-button(md-ink-ripple="#f48fb1") Spring 16' Pt.1
-  li(data-menuanchor="spring-02")
-    md-button(md-ink-ripple="#f48fb1") Spring 16' Pt.2
+div(layout ng-cloak)
+  nav(hide-xs hide-sm hide-md ng-controller='NavbarCtrl')
+    div(class="nav-wrapper white")
+        a(href="#" class="brand-logo") VictoriaBoone 
+        ul(class="right active-link" ng-click="vm.menuClick('asd')")
+          li(data-menuanchor="home")
+            md-button(md-ink-ripple="#f48fb1") Home
+          li
+            md-button(md-ink-ripple="#f48fb1" data-activates="dropdown1" dropdown data-hover="true") Collections
+              i(class="material-icons right") arrow_drop_down      
+          li(data-menuanchor="whoweare")
+            md-button(md-ink-ripple="#f48fb1") Who we are            
+  // Dropdown Structure
+  ul(id="dropdown1" class="dropdown-content")
+    li(data-menuanchor="spring-01")
+      md-button(md-ink-ripple="#f48fb1") Spring 16' Pt.1
+    li(data-menuanchor="spring-02")
+      md-button(md-ink-ripple="#f48fb1") Spring 16' Pt.2
 
 
 //div.navbar.navbar-default.navbar-static-top(ng-controller='NavbarController')
