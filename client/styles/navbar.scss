@@ -1,30 +1,26 @@
 nav {
     z-index: 999;
     position: fixed;
-}
-
-nav button {
-	vertical-align: middle;
-}
-
-nav button:focus {
-    background-color: transparent;
-}
-
-nav ul li {
-    button span,
-    button i {
-        color: #263238;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 50px;
+    .brand-logo {
+        padding-left: 15px;
+        img {
+            width: 200px;
+        }
     }
-}
-
-nav ul li.active {
-    background-color: #ff4081;
-    button span {
-        color: white;
+    button {
+        vertical-align: middle;
+    }
+    button:focus {
+        background-color: transparent;
+    }
+    ul li {
+        button span,
+        button i {
+            color: #263238;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 50px;
+        }
     }
 }
 
@@ -48,7 +44,5 @@ button.md-button.ng-isolate-scope.md-ink-ripple {
 
 .dropdown-content li button span.active,
 .dropdown-content li button span.selected {
-	color: white;
+    color: white;
 }
-
-
