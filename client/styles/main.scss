@@ -26,6 +26,8 @@
     margin-left: 15px;
 }
 
+/* Backgrounds will cover all the section
+* --------------------------------------- */
 #section0,
 #section1,
 #section2,
@@ -33,7 +35,16 @@
     background-size: cover;
 }
 
+/* Defining each sectino background and styles 
+* --------------------------------------- */
 #section0 {
     background-image: url('../assets/images/home_bg.jpg'); 
     background-position: right;
+}
+
+/*Adding background for the slides
+* --------------------------------------- */
+#slide1{
+    background-image: url(imgs/bg2.jpg);
+    padding: 6% 0 0 0;
 }
