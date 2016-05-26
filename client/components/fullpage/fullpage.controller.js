@@ -13,7 +13,7 @@
     	var _this = this;
 
         this.mainOptions = {
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            sectionsColor: ['#ffffff', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
             anchors: ['home', 'spring-01', 'spring-02', 'whoweare'],
             menu: '.active-link'
         };

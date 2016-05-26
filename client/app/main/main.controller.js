@@ -10,51 +10,6 @@
 
     function MainController($state, $compile, $scope, $timeout, $mdSidenav, $log) {
 
-        var _this = this;
-
-        this.mainOptions = {
-            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-            anchors: ['home', 'spring-01', 'spring-02', 'whoweare'],
-            menu: '.active-link'
-        };
-        this.slides = [{
-            title: 'Simple',
-            description: 'Easy to use. Configurable and customizable.',
-            src: 'images/1.png'
-        }, {
-            title: 'Cool',
-            description: 'It just looks cool. Impress everybody with a simple and modern web design!',
-            src: 'images/2.png'
-        }, {
-            title: 'Compatible',
-            description: 'Working in modern and old browsers too!',
-            src: 'images/3.png'
-        }];
-
-        this.moog = function(merg) {
-            //hamburger.classList.toggle("is-active");
-            console.log(merg);
-            // Component lookup should always be available since we are not using `ng-if`
-
-        };
-
-        this.menuClick = function(merg) {
-            console.log(merg);
-        }
-
-        this.addSlide = function() {
-            _this.slides.push({
-                title: 'New Slide',
-                description: 'I made a new slide!',
-                src: 'images/1.png'
-            });
-
-            //$compile(angular.element($('.slide')))($scope);
-        };
-
-
-
-
 
     }
 

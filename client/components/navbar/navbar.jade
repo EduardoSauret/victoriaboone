@@ -2,7 +2,7 @@
 div(layout ng-cloak)
   nav(hide-xs hide-sm hide-md ng-controller='NavbarCtrl')
     div(class="nav-wrapper white")
-        a(href="#" class="brand-logo") 
+        a(class="brand-logo" data-menuanchor="home") 
           img(ng-src="/assets/images/victoriaboone_logo.png" alt="Victoria Boone")
         ul(class="right active-link" ng-click="vm.menuClick('asd')")
           li(data-menuanchor="home")
