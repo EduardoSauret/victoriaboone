@@ -31,7 +31,9 @@
 #section0,
 #section1,
 #section2,
-#section3{
+#section3,
+#slide1,
+#slide2{
     background-size: cover;
 }
 
@@ -45,6 +47,16 @@
 /*Adding background for the slides
 * --------------------------------------- */
 #slide1{
-    background-image: url(imgs/bg2.jpg);
-    padding: 6% 0 0 0;
+    background-image: url('../assets/images/IMG_8702.jpg');
+    background-position: center;
 }
+#slide2{
+    background-image: url('../assets/images/IMG_8689.jpg');
+    background-position: center;
+}
+#slide3{
+    background-image: url('');
+}
+
+
+
