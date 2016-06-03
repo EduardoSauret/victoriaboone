@@ -26,37 +26,45 @@
     margin-left: 15px;
 }
 
-/* Backgrounds will cover all the section
+#fullpage {
+    .section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    /* Backgrounds will cover all the section
 * --------------------------------------- */
-#section0,
-#section1,
-#section2,
-#section3,
-#slide1,
-#slide2{
-    background-size: cover;
-}
-
-/* Defining each sectino background and styles 
+    #section0,
+    #section1,
+    #section2,
+    #section3,
+    #slide1,
+    #slide2 {
+        background-size: cover;
+    }
+    /* Defining each sectino background and styles 
 * --------------------------------------- */
-#section0 {
-    background-image: url('../assets/images/home_bg.jpg'); 
-    background-position: right;
-}
-
-/*Adding background for the slides
+    #section0 {
+        background-image: url('../assets/images/home_bg.jpg');
+        background-position: right;
+    }
+    /*Adding background for the slides
 * --------------------------------------- */
-#slide1{
-    background-image: url('../assets/images/IMG_8702.jpg');
-    background-position: center;
-}
-#slide2{
-    background-image: url('../assets/images/IMG_8689.jpg');
-    background-position: center;
-}
-#slide3{
-    background-image: url('');
-}
+    #slide1 {
+        background-image: url('../assets/images/IMG_8702.jpg');
+        background-position: center;
+    }
+    #slide2 {
+        background-image: url('../assets/images/IMG_8689.jpg');
+        background-position: center;
+    }
+    #slide3 {
+        background-image: url('');
+    }
 
 
+    h1.header, p {
+        font-family: 'Amatic SC';
+    }
 
+}
