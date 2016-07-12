@@ -20,7 +20,7 @@
         this.slides = [{
             title: 'Simple',
             description: 'Easy to use. Configurable and customizable.',
-            //src: 'assets/images/IMG_8743.jpg'
+            //src: 'assets/images/spring01/IMG_01.jpg'
         }, {
             title: 'Cool',
             description: 'It just looks cool. Impress everybody with a simple and modern web design!',
