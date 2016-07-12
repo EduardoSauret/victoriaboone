@@ -49,57 +49,113 @@
     }
     /*Adding background for the slides
 * --------------------------------------- */
-    #slide1 {
-        background-image: url('../assets/images/spring01/IMG_01.jpg');
-        background-position: center top;
+    #section1 {
+        #slide1 {
+            background-image: url('../assets/images/spring01/IMG_01.jpg');
+            background-position: center top;
+        }
+        #slide2 {
+            background-image: url('../assets/images/spring01/IMG_02.jpg');
+            background-position: center top;
+        }
+        #slide3 {
+            background-image: url('../assets/images/spring01/IMG_03.jpg');
+            background-position: center top;
+        }
+        #slide4 {
+            background-image: url('../assets/images/spring01/IMG_04.jpg');
+            background-position: center top;
+        }
+        #slide5 {
+            background-image: url('../assets/images/spring01/IMG_05.jpg');
+            background-position: center top;
+        }
+        #slide6 {
+            background-image: url('../assets/images/spring01/IMG_06.jpg');
+            background-position: center top;
+        }
+        #slide7 {
+            background-image: url('../assets/images/spring01/IMG_07.jpg');
+            background-position: center top;
+        }
+        #slide8 {
+            background-image: url('../assets/images/spring01/IMG_08.jpg');
+            background-position: center top;
+        }
+        #slide9 {
+            background-image: url('../assets/images/spring01/IMG_09.jpg');
+            background-position: center top;
+        }
+        #slide10 {
+            background-image: url('../assets/images/spring01/IMG_10.jpg');
+            background-position: center top;
+        }
+        #slide11 {
+            background-image: url('../assets/images/spring01/IMG_11.jpg');
+            background-position: center top;
+        }
+        #slide12 {
+            background-image: url('../assets/images/spring01/IMG_12.jpg');
+            background-position: center top;
+        }
+        #slide13 {
+            background-image: url('../assets/images/spring01/IMG_13.jpg');
+            background-position: center top;
+        }
     }
-    #slide2 {
-        background-image: url('../assets/images/spring01/IMG_02.jpg');
-        background-position: center top;
-    }
-    #slide3 {
-        background-image: url('../assets/images/spring01/IMG_03.jpg');
-        background-position: center top;
-    }
-    #slide4 {
-        background-image: url('../assets/images/spring01/IMG_04.jpg');
-        background-position: center top;
-    }
-    #slide5 {
-        background-image: url('../assets/images/spring01/IMG_05.jpg');
-        background-position: center top;
-    }
-    #slide6 {
-        background-image: url('../assets/images/spring01/IMG_06.jpg');
-        background-position: center top;
-    }
-    #slide7 {
-        background-image: url('../assets/images/spring01/IMG_07.jpg');
-        background-position: center top;
-    }
-    #slide8 {
-        background-image: url('../assets/images/spring01/IMG_08.jpg');
-        background-position: center top;
-    }
-    #slide9 {
-        background-image: url('../assets/images/spring01/IMG_09.jpg');
-        background-position: center top;
-    }
-    #slide10 {
-        background-image: url('../assets/images/spring01/IMG_10.jpg');
-        background-position: center top; 
-    }
-    #slide11 {
-        background-image: url('../assets/images/spring01/IMG_11.jpg');
-        background-position: center top;
-    }
-    #slide12 {
-        background-image: url('../assets/images/spring01/IMG_12.jpg');
-        background-position: center top;
-    }
-    #slide13 {
-        background-image: url('../assets/images/spring01/IMG_13.jpg');
-        background-position: center top;
+    #section2 {
+        #slide1 {
+            background-image: url('../assets/images/spring02/IMG_01.jpg');
+            background-position: center top;
+        }
+        #slide2 {
+            background-image: url('../assets/images/spring02/IMG_02.jpg');
+            background-position: center top;
+        }
+        #slide3 {
+            background-image: url('../assets/images/spring02/IMG_03.jpg');
+            background-position: center top;
+        }
+        #slide4 {
+            background-image: url('../assets/images/spring02/IMG_04.jpg');
+            background-position: center top;
+        }
+        #slide5 {
+            background-image: url('../assets/images/spring02/IMG_05.jpg');
+            background-position: center top;
+        }
+        #slide6 {
+            background-image: url('../assets/images/spring02/IMG_06.jpg');
+            background-position: center top;
+        }
+        #slide7 {
+            background-image: url('../assets/images/spring02/IMG_07.jpg');
+            background-position: center top;
+        }
+        #slide8 {
+            background-image: url('../assets/images/spring02/IMG_08.jpg');
+            background-position: center top;
+        }
+        #slide9 {
+            background-image: url('../assets/images/spring02/IMG_09.jpg');
+            background-position: center top;
+        }
+        #slide10 {
+            background-image: url('../assets/images/spring02/IMG_10.jpg');
+            background-position: center top;
+        }
+        #slide11 {
+            background-image: url('../assets/images/spring02/IMG_11.jpg');
+            background-position: center top;
+        }
+        #slide12 {
+            background-image: url('../assets/images/spring02/IMG_12.jpg');
+            background-position: center top;
+        }
+        #slide13 {
+            background-image: url('../assets/images/spring02/IMG_13.jpg');
+            background-position: center top;
+        }
     }
     h1.header,
     p {
