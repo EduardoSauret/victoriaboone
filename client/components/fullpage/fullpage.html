@@ -7,73 +7,32 @@
                     <p>@victoriaboone</p>
                 </div>
                 <div class="section" id="section1">
-                    <div class="slide" id="slide1">
-                        <div class="intro">
-                            <!--<h1>Spring 16'</h1>
-                            <p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-                            <img src="assets/images/IMG_8743.jpg" alt="slider" />
-                            <button ng-click="vm.addSlide();">Click Me to Add another Slide!</button>-->
+                    <div ng-repeat="product in vm.spring01">
+                        <div class="slide" id="{{product.id}}">
+                            <!--<h1>{{product.title}}</h1>-->
                         </div>
                     </div>
-                    <div class="slide" id="slide2">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide3">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide4">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide5">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide6">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide7">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide8">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide9">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide10">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide11">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide12">
-                        <div class="intro"></div>
-                    </div>
-                    <div class="slide" id="slide13">
-                        <div class="intro"></div>
-                    </div>
-
-                </div>
+                </div>  
                 <div class="section" id="section2">
-                    <div class="intro">
-                        <h1 ng-click="vm.moog('sss')">Example</h1>
-                        <p>HTML markup example to define 4 sections.</p>
-                        <img src="images/example2.png" alt="example" />
+                    <div ng-repeat="product in vm.spring02">
+                        <div class="slide" id="{{product.id}}">
+    
+                        </div>                  
                     </div>
                 </div>
                 <div class="section" id="section3">
                     <div class="intro">
-                        <h1>Working On Tablets</h1>
-                        <p>
-                            Designed to fit to different screen sizes as well as tablet and mobile devices.
+                        <h1></h1>
+                        <h3>
+                            Victoria Boone is a Mexican independent Ready-to-Wear fashion brand that can be described as vibrant with its touch of uniqueness. The design is defined by its statement pieces complemented with an urban style that reflect individuality.
                             <br />
                             <br />
                             <br />
                             <br />
                             <br />
                             <br />
-                        </p>
+                        </h3>
                     </div>
-                    <img src="images/tablets.png" alt="tablets" />
                 </div>
             </div>
         </div>

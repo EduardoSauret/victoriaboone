@@ -6,11 +6,11 @@
         .module('victoriabooneApp')
         .controller('FullpageCtrl', FullpageCtrl);
 
-    FullpageCtrl.$inject = ['$state', '$compile', '$scope', '$timeout', '$mdSidenav', '$log'];
+    FullpageCtrl.$inject = ['$state', '$compile', '$scope', '$timeout', '$mdSidenav', '$log', '$http'];
 
-    function FullpageCtrl($state, $compile, $scope, $timeout, $mdSidenav, $log) {
+    function FullpageCtrl($state, $compile, $scope, $timeout, $mdSidenav, $log, $http) {
 
-    	var _this = this;
+        var _this = this;
 
         this.mainOptions = {
             sectionsColor: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff'],
@@ -30,6 +30,74 @@
             description: 'Working in modern and old browsers too!',
             //src: 'images/3.png'
         }];
+
+        this.spring01 = [{
+            id: 'spring01-01',
+            title: ''
+        },{
+            id: 'spring01-02',
+            title: ''
+        },{
+            id: 'spring01-03',
+            title: ''
+        },{
+            id: 'spring01-04',
+            title: ''
+        },{
+            id: 'spring01-05',
+            title: ''
+        },{
+            id: 'spring01-06',
+            title: ''
+        },{
+            id: 'spring01-07',
+            title: ''
+        },{
+            id: 'spring01-08',
+            title: ''
+        },{
+            id: 'spring01-09',
+            title: ''
+        },{
+            id: 'spring01-10',
+            title: ''
+        },{
+            id: 'spring01-11',
+            title: ''
+        },{
+            id: 'spring01-12',
+            title: ''
+        },{
+            id: 'spring01-13',
+            title: ''
+        },];
+
+        this.spring02 = [{
+            id: 'spring02-01'
+        }, {
+            id: 'spring02-02'
+        }, {
+            id: 'spring02-03'
+        }, {
+            id: 'spring02-04'
+        }, {
+            id: 'spring02-05'
+        }, {
+            id: 'spring02-06'
+        }, {
+            id: 'spring02-07'
+        }, {
+            id: 'spring02-08'
+        }, {
+            id: 'spring02-09'
+        }, {
+            id: 'spring02-10'
+        }, {
+            id: 'spring02-11'
+        }, {
+            id: 'spring02-12'
+        }];
+
 
         this.moog = function(merg) {
             //hamburger.classList.toggle("is-active");
@@ -51,6 +119,7 @@
 
             //$compile(angular.element($('.slide')))($scope);
         };
+
 
 
     }

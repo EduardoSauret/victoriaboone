@@ -2,6 +2,18 @@
     margin: 20px 0;
 }
 
+.brand-logo {
+    img {
+        width: 200px;
+    }
+}
+
+h1.header,
+p {
+    font-family: 'Amatic SC';
+}
+
+
 #banner {
     border-bottom: none;
     margin-top: -20px;
@@ -47,62 +59,144 @@
         background-image: url('../assets/images/home_bg.jpg');
         background-position: right;
     }
-    /*Adding background for the slides
+    /*Adding background for the slides (COLLECTIONS)
 * --------------------------------------- */
-    #slide1 {
+    #spring01-01 {
         background-image: url('../assets/images/spring01/IMG_01.jpg');
         background-position: center top;
     }
-    #slide2 {
+    #spring01-02 {
         background-image: url('../assets/images/spring01/IMG_02.jpg');
-        background-position: center top;
+        background-position: center bottom;
     }
-    #slide3 {
+    #spring01-03 {
         background-image: url('../assets/images/spring01/IMG_03.jpg');
         background-position: center top;
     }
-    #slide4 {
+    #spring01-04 {
         background-image: url('../assets/images/spring01/IMG_04.jpg');
         background-position: center top;
     }
-    #slide5 {
+    #spring01-05 {
         background-image: url('../assets/images/spring01/IMG_05.jpg');
         background-position: center top;
     }
-    #slide6 {
+    #spring01-06 {
         background-image: url('../assets/images/spring01/IMG_06.jpg');
-        background-position: center top;
+        background-position: center center;
     }
-    #slide7 {
+    #spring01-07 {
         background-image: url('../assets/images/spring01/IMG_07.jpg');
-        background-position: center top;
+        background-position: center center;
     }
-    #slide8 {
+    #spring01-08 {
         background-image: url('../assets/images/spring01/IMG_08.jpg');
-        background-position: center top;
+        background-position: center center;
     }
-    #slide9 {
+    #spring01-09 {
         background-image: url('../assets/images/spring01/IMG_09.jpg');
         background-position: center top;
     }
-    #slide10 {
+    #spring01-10 {
         background-image: url('../assets/images/spring01/IMG_10.jpg');
-        background-position: center top; 
+        background-position: center top;
     }
-    #slide11 {
+    #spring01-11 {
         background-image: url('../assets/images/spring01/IMG_11.jpg');
         background-position: center top;
     }
-    #slide12 {
+    #spring01-12 {
         background-image: url('../assets/images/spring01/IMG_12.jpg');
         background-position: center top;
     }
-    #slide13 {
+    #spring01-13 {
         background-image: url('../assets/images/spring01/IMG_13.jpg');
-        background-position: center top;
+        background-position: center center;
     }
-    h1.header,
-    p {
-        font-family: 'Amatic SC';
+    /* SPRING 02 
+* --------------------------------------- */
+    #spring02-01 {
+        background: url('../assets/images/spring02/IMG_01.jpg') center center no-repeat;
+    }
+    #spring02-02 {
+        background: url('../assets/images/spring02/IMG_02.jpg') center top no-repeat;
+    }
+    #spring02-03 {
+        background: url('../assets/images/spring02/IMG_03.jpg') center top no-repeat;
+    }
+    #spring02-04 {
+        background: url('../assets/images/spring02/IMG_04.jpg') center center no-repeat;
+    }
+    #spring02-05 {
+        background: url('../assets/images/spring02/IMG_05.jpg') left center no-repeat;
+    }
+    #spring02-06 {
+        background: url('../assets/images/spring02/IMG_06.jpg') center top no-repeat;
+    }
+    #spring02-07 {
+        background: url('../assets/images/spring02/IMG_07.jpg') left top no-repeat;
+    }
+    #spring02-08 {
+        background: url('../assets/images/spring02/IMG_08.jpg') center top no-repeat;
+    }
+    #spring02-09 {
+        background: url('../assets/images/spring02/IMG_09.jpg') center top no-repeat;
+    }
+    #spring02-10 {
+        background: url('../assets/images/spring02/IMG_10.jpg') center top no-repeat;
+    }
+    #spring02-11 {
+        background: url('../assets/images/spring02/IMG_11.jpg') center top no-repeat;
+    }
+    #spring02-12 {
+        background: url('../assets/images/spring02/IMG_12.jpg') center top no-repeat;
     }
 }
+
+
+/* ----------- iPhone 6 ----------- */
+
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (max-width: 667px) {
+    #section0 {
+        .fp-tableCell {
+            text-align: left;
+            padding-left: 7%;
+            .header {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+
+/* ----------- iPad 3 and 4 ----------- */
+
+
+/* Portrait */
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #section0 {
+        .fp-tableCell {
+            text-align: center;
+            .header {
+                font-size: 100px;
+            }
+        }
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* ----------- Desktop ----------- */
+
+@media only screen and (min-device-width: 1024px) {}

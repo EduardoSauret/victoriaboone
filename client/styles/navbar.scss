@@ -3,8 +3,9 @@ nav {
     position: fixed;
     .brand-logo {
         padding-left: 15px;
+        width: 200px;
         img {
-            width: 200px;
+            width: 100%;
         }
     }
     .hamburger-box {
@@ -16,13 +17,26 @@ nav {
     button:focus {
         background-color: transparent;
     }
-    ul li {
-        button span,
-        button i {
-            color: #263238;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 50px;
+    ul {
+        li {
+            font-family: 'Raleway', serif;
+            button span,
+            button i,
+            a.social-media {
+                color: #263238;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 50px;
+            }
+            a.social-media i {
+                vertical-align: top;
+            }
+        }
+        li.active {
+            background-color: #5b1b35;
+            button span {
+                color: white;
+            }
         }
     }
 }
@@ -41,11 +55,12 @@ button.md-button.ng-isolate-scope.md-ink-ripple {
 
 .dropdown-content li.active,
 .dropdown-content li.selected {
-    background-color: #ff4081;
+    background-color: #5b1b35;
     color: white;
 }
 
 .dropdown-content li button span.active,
 .dropdown-content li button span.selected {
+    background-color: #5b1b35;
     color: white;
 }

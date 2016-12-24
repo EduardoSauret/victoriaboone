@@ -1,0 +1,57 @@
+.md-dialog-is-showing {
+    overflow: visible !important;
+}
+
+md-backdrop.md-sidenav-backdrop-custom {
+    background-color: transparent !important;
+    z-index: 99;
+}
+
+md-backdrop.disabled {
+    display: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+#sidebar {
+    .active > a {
+            color: #5b1b35;
+    }
+    ul li {
+        margin-bottom: 10px;
+            .active > a {
+            color: #5b1b35;
+    }
+        a {
+            font-family:'Yantramanav', sans-serif;
+            color: #999;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #5b1b35;
+        }
+    }
+    md-sidenav .brand-logo {
+        height: 50px;
+        line-height: 50px;
+        padding-left: 20px;
+    }
+    .brand-logo:hover {
+        text-decoration: none;
+    }
+    .social-media {
+        text-align: left;
+        position: absolute;
+        bottom: 5%;
+        padding-left: 20px;
+        a {
+            color: black;
+            margin-right: 10px;
+        }
+    }
+}
+
+

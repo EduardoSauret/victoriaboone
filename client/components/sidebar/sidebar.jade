@@ -12,6 +12,8 @@ div(ng-controller="SidebarCtrl" id="sidebar")
     md-backdrop(ng-click="backdropToggle()" class="md-sidenav-backdrop md-opaque md-default-theme md-sidenav-backdrop-custom disabled" hide-lg hide-xl)
     md-sidenav(md-is-open="isSidenavOpen" md-component-id="left" class="md-sidenav-left" hide-lg hide-xl)
         md-toolbar(class="white")
+            a(ng-click="backdropToggle()" class="brand-logo" data-menuanchor="home") 
+                img(ng-src="/assets/images/victoriaboone_logo.png" alt="Victoria Boone")
         md-content(layout-padding)
             ul(class="active-link" ng-click="vm.moog('asd')")
                 li(ng-click="backdropToggle()" data-menuanchor="home")
@@ -26,6 +28,13 @@ div(ng-controller="SidebarCtrl" id="sidebar")
                         a Spring 16' Pt.2
                     li(ng-click="backdropToggle()" data-menuanchor="whoweare")
                         a Who we are
+        div(class="social-media")
+                a
+                    i(class="fa fa-facebook fa-lg" aria-hidden="true")
+                a
+                    i(class="fa fa-instagram fa-lg" aria-hidden="true")  
+
+
 
 
 

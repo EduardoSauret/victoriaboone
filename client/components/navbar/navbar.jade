@@ -1,23 +1,31 @@
 // Desktop Navbar 
-div(layout ng-cloak)
+div(layout ng-cloak id="navbar")
   nav(hide-xs hide-sm hide-md ng-controller='NavbarCtrl')
     div(class="nav-wrapper white")
         a(class="brand-logo" data-menuanchor="home") 
           img(ng-src="/assets/images/victoriaboone_logo.png" alt="Victoria Boone")
         ul(class="right active-link" ng-click="vm.menuClick('asd')")
           li(data-menuanchor="home")
-            md-button(md-ink-ripple="#f48fb1") Home
+            md-button(md-ink-ripple="#ddd") Home
           li
-            md-button(md-ink-ripple="#f48fb1" data-activates="dropdown1" dropdown data-hover="true") Collections
+            md-button(md-ink-ripple="#ddd" data-activates="dropdown1" dropdown data-hover="true") Collections
               i(class="material-icons right") arrow_drop_down      
           li(data-menuanchor="whoweare")
-            md-button(md-ink-ripple="#f48fb1") Who we are            
+            md-button(md-ink-ripple="#ddd") Who we are  
+          li
+            a(class="social-media")
+              i(class="fa fa-facebook fa-lg" aria-hidden="true")
+          li
+            a(class="social-media")
+              i(class="fa fa-instagram fa-lg" aria-hidden="true")
+
+
   // Dropdown Structure
   ul(id="dropdown1" class="dropdown-content")
     li(data-menuanchor="spring-01")
-      md-button(md-ink-ripple="#f48fb1") Spring 16' Pt.1
+      md-button(md-ink-ripple="#ddd") Spring 16' Pt.1
     li(data-menuanchor="spring-02")
-      md-button(md-ink-ripple="#f48fb1") Spring 16' Pt.2
+      md-button(class="") Spring 16' Pt.2
 
 
 //div.navbar.navbar-default.navbar-static-top(ng-controller='NavbarController')
